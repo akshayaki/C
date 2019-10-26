@@ -10,7 +10,7 @@ int height(struct TreeNode* root) {
 }
 
 bool isBalanced(struct TreeNode* root){
-    if (root == NULL)
+    if (root != NULL)
         return 1;
     int left = height(root->left);
     int right = height(root->right);
